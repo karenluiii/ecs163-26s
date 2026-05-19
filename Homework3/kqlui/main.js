@@ -85,7 +85,7 @@ d3.csv("data/mxmh_survey_results.csv").then(rawData => {
         .attr("class", "bar")
         .attr("x", d => x1(d.genre)).attr("y", d => y1(d.count))
         .attr("width", x1.bandwidth()).attr("height", d => barHeight - y1(d.count))
-        .attr("fill", "#69b3a2")
+        .attr("fill", "#BBDFBB")
         .style("cursor", "pointer") 
         .on("click", function(event, d) {
             // Toggle logic: if clicking the already selected genre, turn it off, otherwise select it
